@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="mystyle.css" media="all" />
+<script src="proses.js"></script>
+</head>
+<body>
+<h2>DATA MAHASISWA</h2>
+<table class='frtabel' align='center'>
+<form action='tambah.php' method='POST'>
+<caption>Tambah data Mahasiswa</caption>
+<tr>
+    <td width='140px'>No. Induk</td><td><input type='text' name='noinduk' maxlength='12' onblur='cekisi(this.value)'>
+    </td>
+</tr>
+<tr>
+    <td>Nama Mahasiswa</td>
+    <td>
+        <input type='text' name='nama' maxlength='50' onblur='cekisi(this.value)'>
+    </td>
+</tr>
+<tr>
+    <td>JK</td>
+    <td>
+        <input type="radio" name="jk" value="L" checked> Laki-laki
+<input type="radio" name="jk" value="P"> Perempuan</td>
+</tr>
+<tr>
+    <td>Tgl. Lahir</td>
+    <td>
+        <input type='date' name='tgllahir'>
+</td>
+</tr>
+<tr>
+    <td>Alamat</td>
+    <td><textarea name="alamat" cols="30">
+
+    </textarea>
+</td>
+</tr>
+<tr>
+    <td>Dosen Pembimbing</td>
+    <td>
+        <input type='text' name='dosen' maxlength='50'>
+    </td>
+    </tr>
+<tr>
+    <td>No. Telepon</td>
+    <td>
+        <input type='tel' name='telp' maxlength='50' onblur='cekisi(this.value)'>
+    </td>
+    </tr>
+<tr>
+    <td colspan='3'>
+        <input type='submit' value='Proses'>&nbsp;<input type='reset' value='Batal'></td>
+    </tr>
+</form>
+</table>
+</body>
+</html>
