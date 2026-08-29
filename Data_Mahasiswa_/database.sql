@@ -1,9 +1,3 @@
--- =========================================================
--- Database: db_mahasiswa
--- Jalankan file ini di phpMyAdmin / mysql client sebelum
--- membuka tabel.php
--- =========================================================
-
 CREATE DATABASE IF NOT EXISTS db_mahasiswa;
 USE db_mahasiswa;
 

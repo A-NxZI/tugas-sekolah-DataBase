@@ -11,13 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dosen   = trim($_POST['dosen']);
     $telp    = trim($_POST['telp']);
 
-    // Validasi sederhana di sisi server (No. Induk, Nama, No. Telepon wajib diisi)
     if ($noinduk === '' || $nama === '' || $telp === '') {
         echo "<script>alert('Kolom harus diisi'); window.history.back();</script>";
         exit;
     }
 
-    // Gunakan prepared statement agar aman dari SQL Injection
     $stmt = mysqli_prepare(
         $koneksi,
         "INSERT INTO mahasiswa (no_induk, nama, jk, tgl_lahir, alamat, dosen, telp)

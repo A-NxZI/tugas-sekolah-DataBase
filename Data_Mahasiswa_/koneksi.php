@@ -1,10 +1,4 @@
 <?php
-// =========================================================
-// koneksi.php
-// Sesuaikan $host, $user, $pass, $db dengan konfigurasi
-// MySQL/XAMPP/Laragon di komputer Anda
-// =========================================================
-
 $host = 'localhost';
 $user = 'root';
 $pass = '';
